@@ -4,12 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stockscope"
+authors = [{name = "Jacob Martin", email = "Jacob@martin-email.com"}]
 version = "0.1.0"
 description = "A Python package for tracking and analyzing stock data"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
-dependencies = []
+dependencies = ["yfinance",
+                "shiny",
+                "pandas",
+                "plotly"]
 
 [project.optional-dependencies]
 dev = [
